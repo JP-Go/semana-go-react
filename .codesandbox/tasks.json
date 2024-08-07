@@ -6,12 +6,7 @@
     "go run": {
       "name": "Run",
       "command": "go run main.go",
-      "runAtStart": false,
-      "restartOn": {
-        "files": [
-          "./main.go"
-        ]
-      }
+      "runAtStart": false
     }
   }
 }
