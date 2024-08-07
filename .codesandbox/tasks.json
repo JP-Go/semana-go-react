@@ -1,12 +1,21 @@
 {
   // These tasks will run in order when initializing your CodeSandbox project.
-  "setupTasks": [],
+  "setupTasks": [
+    {
+      "name": "Install tern",
+      "command": "go install github.com/jackc/tern/v2@latest"
+    },
+    {
+      "name": "Install sqlc",
+      "command": "go install github.com/sqlc-dev/sqlc/cmd/sqlc@latest"
+    }
+  ],
+
   // These tasks can be run from CodeSandbox. Running one will open a log in the app.
   "tasks": {
     "go run": {
       "name": "Run",
-      "command": "go run main.go",
-      "runAtStart": false
+      "command": "go run main.go"
     }
   }
 }
