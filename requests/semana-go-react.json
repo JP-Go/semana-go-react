@@ -1,0 +1,297 @@
+{
+  "name": "semana-go-react",
+  "requests": [
+    {
+      "name": "create-room",
+      "url": "http://localhost:8080/api/rooms/",
+      "method": "POST",
+      "params": [],
+      "headers": [
+        {
+          "data": ["cache-control", "no-cache"],
+          "enabled": true
+        },
+        {
+          "data": ["user-agent", "ATAC/v0.16.0"],
+          "enabled": true
+        },
+        {
+          "data": ["accept", "*/*"],
+          "enabled": true
+        },
+        {
+          "data": ["accept-encoding", "gzip, deflate, br"],
+          "enabled": true
+        },
+        {
+          "data": ["connection", "keep-alive"],
+          "enabled": true
+        },
+        {
+          "data": ["content-type", "text/plain"],
+          "enabled": true
+        }
+      ],
+      "body": {
+        "raw": "{\n\"theme\": \"sports\"\n}"
+      },
+      "auth": "no_auth",
+      "scripts": {
+        "pre_request_script": null,
+        "post_request_script": null
+      },
+      "settings": {
+        "use_config_proxy": true,
+        "allow_redirects": true,
+        "store_received_cookies": true,
+        "pretty_print_response_content": true
+      }
+    },
+    {
+      "name": "create-room-message",
+      "url": "http://localhost:8080/api/rooms/ebe8479a-42a0-4a24-8a5a-6181b18a536f/messages/",
+      "method": "POST",
+      "params": [],
+      "headers": [
+        {
+          "data": ["cache-control", "no-cache"],
+          "enabled": true
+        },
+        {
+          "data": ["user-agent", "ATAC/v0.16.0"],
+          "enabled": true
+        },
+        {
+          "data": ["accept", "*/*"],
+          "enabled": true
+        },
+        {
+          "data": ["accept-encoding", "gzip, deflate, br"],
+          "enabled": true
+        },
+        {
+          "data": ["connection", "keep-alive"],
+          "enabled": true
+        },
+        {
+          "data": ["content-type", "application/json"],
+          "enabled": true
+        }
+      ],
+      "body": {
+        "json": "{\n\"message\": \"some message to warn users\"\n}"
+      },
+      "auth": "no_auth",
+      "scripts": {
+        "pre_request_script": null,
+        "post_request_script": null
+      },
+      "settings": {
+        "use_config_proxy": true,
+        "allow_redirects": true,
+        "store_received_cookies": true,
+        "pretty_print_response_content": true
+      }
+    },
+    {
+      "name": "get-rooms",
+      "url": "http://localhost:8080/api/rooms",
+      "method": "GET",
+      "params": [],
+      "headers": [
+        {
+          "data": ["cache-control", "no-cache"],
+          "enabled": true
+        },
+        {
+          "data": ["user-agent", "ATAC/v0.16.0"],
+          "enabled": true
+        },
+        {
+          "data": ["accept", "*/*"],
+          "enabled": true
+        },
+        {
+          "data": ["accept-encoding", "gzip, deflate, br"],
+          "enabled": true
+        },
+        {
+          "data": ["connection", "keep-alive"],
+          "enabled": true
+        }
+      ],
+      "body": "no_body",
+      "auth": "no_auth",
+      "scripts": {
+        "pre_request_script": null,
+        "post_request_script": null
+      },
+      "settings": {
+        "use_config_proxy": true,
+        "allow_redirects": true,
+        "store_received_cookies": true,
+        "pretty_print_response_content": true
+      }
+    },
+    {
+      "name": "get-room-messages",
+      "url": "http://localhost:8080/api/rooms/ebe8479a-42a0-4a24-8a5a-6181b18a536f/messages",
+      "method": "GET",
+      "params": [],
+      "headers": [
+        {
+          "data": ["cache-control", "no-cache"],
+          "enabled": true
+        },
+        {
+          "data": ["user-agent", "ATAC/v0.16.0"],
+          "enabled": true
+        },
+        {
+          "data": ["accept", "*/*"],
+          "enabled": true
+        },
+        {
+          "data": ["accept-encoding", "gzip, deflate, br"],
+          "enabled": true
+        },
+        {
+          "data": ["connection", "keep-alive"],
+          "enabled": true
+        }
+      ],
+      "body": "no_body",
+      "auth": "no_auth",
+      "scripts": {
+        "pre_request_script": null,
+        "post_request_script": null
+      },
+      "settings": {
+        "use_config_proxy": true,
+        "allow_redirects": true,
+        "store_received_cookies": true,
+        "pretty_print_response_content": true
+      }
+    },
+    {
+      "name": "react-to-message",
+      "url": "http://localhost:8080/api/rooms/ebe8479a-42a0-4a24-8a5a-6181b18a536f/messages/a7903b63-ee38-4466-9b74-8a0d294a4113/react",
+      "method": "PATCH",
+      "params": [],
+      "headers": [
+        {
+          "data": ["cache-control", "no-cache"],
+          "enabled": true
+        },
+        {
+          "data": ["user-agent", "ATAC/v0.16.0"],
+          "enabled": true
+        },
+        {
+          "data": ["accept", "*/*"],
+          "enabled": true
+        },
+        {
+          "data": ["accept-encoding", "gzip, deflate, br"],
+          "enabled": true
+        },
+        {
+          "data": ["connection", "keep-alive"],
+          "enabled": true
+        }
+      ],
+      "body": "no_body",
+      "auth": "no_auth",
+      "scripts": {
+        "pre_request_script": null,
+        "post_request_script": null
+      },
+      "settings": {
+        "use_config_proxy": true,
+        "allow_redirects": true,
+        "store_received_cookies": true,
+        "pretty_print_response_content": true
+      }
+    },
+    {
+      "name": "remove-reaction-from-message",
+      "url": "http://localhost:8080/api/rooms/ebe8479a-42a0-4a24-8a5a-6181b18a536f/messages/a7903b63-ee38-4466-9b74-8a0d294a4113/react",
+      "method": "DELETE",
+      "params": [],
+      "headers": [
+        {
+          "data": ["cache-control", "no-cache"],
+          "enabled": true
+        },
+        {
+          "data": ["user-agent", "ATAC/v0.16.0"],
+          "enabled": true
+        },
+        {
+          "data": ["accept", "*/*"],
+          "enabled": true
+        },
+        {
+          "data": ["accept-encoding", "gzip, deflate, br"],
+          "enabled": true
+        },
+        {
+          "data": ["connection", "keep-alive"],
+          "enabled": true
+        }
+      ],
+      "body": "no_body",
+      "auth": "no_auth",
+      "scripts": {
+        "pre_request_script": null,
+        "post_request_script": null
+      },
+      "settings": {
+        "use_config_proxy": true,
+        "allow_redirects": true,
+        "store_received_cookies": true,
+        "pretty_print_response_content": true
+      }
+    },
+    {
+      "name": "answer-message",
+      "url": "http://localhost:8080/api/rooms/ebe8479a-42a0-4a24-8a5a-6181b18a536f/messages/a7903b63-ee38-4466-9b74-8a0d294a4113/answer",
+      "method": "PATCH",
+      "params": [],
+      "headers": [
+        {
+          "data": ["cache-control", "no-cache"],
+          "enabled": true
+        },
+        {
+          "data": ["user-agent", "ATAC/v0.16.0"],
+          "enabled": true
+        },
+        {
+          "data": ["accept", "*/*"],
+          "enabled": true
+        },
+        {
+          "data": ["accept-encoding", "gzip, deflate, br"],
+          "enabled": true
+        },
+        {
+          "data": ["connection", "keep-alive"],
+          "enabled": true
+        }
+      ],
+      "body": "no_body",
+      "auth": "no_auth",
+      "scripts": {
+        "pre_request_script": null,
+        "post_request_script": null
+      },
+      "settings": {
+        "use_config_proxy": true,
+        "allow_redirects": true,
+        "store_received_cookies": true,
+        "pretty_print_response_content": true
+      }
+    }
+  ]
+}
